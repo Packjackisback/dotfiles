@@ -25,8 +25,20 @@
     wget
     git
   ];
+  
+  # Enable auto-upgrades.
+  system.autoUpgrade = {
+    enable = true;
+    # Run daily
+    flake = "/home/packjack/nixos-config/#laptop";
+    # Build the new config and make it the default, but don't switch yet.  This will be picked up on reboot. 
+    operation = "boot";
+    dates = "03:00";
+    randomizedDelaySec = "15min";
+  };
 
-  time.timeZone = "Europe/Paris";
+
+  time.timeZone = "America/Chicago";
   i18n.defaultLocale = "en_US.UTF-8";
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "23.05";

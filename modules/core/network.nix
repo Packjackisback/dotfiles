@@ -1,7 +1,7 @@
 { pkgs, ... }: 
 {
   networking = {
-    hostName = "nixos";
+    hostName = "jackbox";
     networkmanager.enable = true;
     nameservers = [ "1.1.1.1" ];
     firewall = {

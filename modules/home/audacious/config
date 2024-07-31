@@ -4,7 +4,7 @@ equalizer_bands=-1,1,2,2,1,0,0,-1,-1,-1
 soft_clipping=TRUE
 
 [audgui]
-filesel_path=/home/frostphoenix/Music
+filesel_path=/home/packjack/Music
 
 [audqt]
 icon_theme=audacious-flat-dark

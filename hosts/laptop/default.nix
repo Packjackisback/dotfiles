@@ -11,11 +11,11 @@
     cpupower-gui
     powertop
   ];
-  
+  services.usbmuxd.enable = true;
   services = {    
     # thermald.enable = true;
     # cpupower-gui.enable = true;
-    power-profiles-daemon.enable = true;
+    # power-profiles-daemon.enable = true;
  
     upower = {
       enable = true;

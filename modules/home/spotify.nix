@@ -1,6 +1,6 @@
-{ inputs, pkgs, ... }: 
+{ pkgs, ... }: 
 {
-  programs.spotify = {
+  programs.spotify-player = {
     enable = true;  
   };
 }

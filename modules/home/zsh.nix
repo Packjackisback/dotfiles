@@ -9,6 +9,8 @@
       enable = true;
       plugins = [ "git" "fzf" ];
     };
+    initExtra = ''
+    '';
     initExtraFirst = ''
       DISABLE_MAGIC_FUNCTIONS=true
       export "MICRO_TRUECOLOR=1"
@@ -17,12 +19,12 @@
       # record = "wf-recorder --audio=alsa_output.pci-0000_08_00.6.analog-stereo.monitor -f $HOME/Videos/$(date +'%Y%m%d%H%M%S_1.mp4')";
 
       # Utils
+      v = "hx";      
       c = "clear";
       cd = "z";
       tt = "gtrash put";
       cat = "bat";
       nano = "micro";
-      code = "codium";
       py = "python";
       icat = "kitten icat";
       dsize = "du -hs";
@@ -33,14 +35,14 @@
       tree = "eza --icons --tree --group-directories-first";
 
       # Nixos
-      cdnix = "cd ~/nixos-config && codium ~/nixos-config";
+      cdnix = "cd ~/nixos-config";
       ns = "nix-shell --run zsh";
       nix-shell = "nix-shell --run zsh";
-      nix-switch = "sudo nixos-rebuild switch --flake ~/nixos-config#${host}";
-      nix-switchu = "sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#${host}";
+      nixswitch = "sudo nixos-rebuild switch --flake ~/nixos-config#${host}";
+      nixswitchu = "sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#${host}";
       nix-flake-update = "sudo nix flake update ~/nixos-config#";
       nix-clean = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d";
-
+      
       # Git
       ga   = "git add";
       gaa  = "git add --all";

@@ -1,30 +1,42 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
+    p7zip
+    armcord
     bitwise                           # cli tool for bit / hex manipulation
+    calibre
+    diff-pdf
     eza                               # ls replacement
     entr                              # perform action when file change
+    fastfetch
     fd                                # find replacement
     file                              # Show file information 
     fzf                               # fuzzy finder
+    git-credential-oauth              # automatically save github credentials
     gtt                               # google translate TUI
     gimp
+    krita
     gtrash                            # rm replacement, put deleted files in system trash
+    helix
     hexdump
-    jdk17                             # java
+    jdk21                             #for 1.20.6
     lazygit
     libreoffice
     cinnamon.nemo-with-extensions     # file manager
+    shotcut    
     nitch                             # systhem fetch util
     nix-prefetch-github
+    obsidian
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
-    soundwireserver                   # pass audio to android phone
     todo                              # cli todo list
     toipe                             # typing test in the terminal
+    udisks
+    unp
+    unrar
     valgrind                          # c memory analyzer
     yazi                              # terminal file manager
-    youtube-dl
+    yt-dlp
     gnome.zenity
     winetricks
     wineWowPackages.wayland
@@ -34,8 +46,7 @@
     gnumake
 
     # Python
-    python3
-
+    python312
     bleachbit                         # cache cleaner
     cmatrix
     gparted                           # partition manager
@@ -43,7 +54,8 @@
     imv                               # image viewer
     killall
     libnotify
-	  man-pages					            	  # extra man pages
+    man-pages			      # extra man pages
+    #mongodb                           # the mongodb
     mpv                               # video player
     ncdu                              # disk space
     openssl
@@ -58,6 +70,9 @@
     wget
     xdg-utils
     xxd
+
+    libimobiledevice
+    ifuse
     inputs.alejandra.defaultPackage.${system}
   ]);
 }
