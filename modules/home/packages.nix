@@ -5,7 +5,9 @@
     armcord
     bitwise                           # cli tool for bit / hex manipulation
     calibre
+    catppuccinifier-cli
     diff-pdf
+    dipc
     eza                               # ls replacement
     entr                              # perform action when file change
     fastfetch
@@ -15,6 +17,7 @@
     git-credential-oauth              # automatically save github credentials
     gtt                               # google translate TUI
     gimp
+    hyprcursor
     krita
     gtrash                            # rm replacement, put deleted files in system trash
     helix
@@ -22,13 +25,14 @@
     jdk21                             #for 1.20.6
     lazygit
     libreoffice
-    cinnamon.nemo-with-extensions     # file manager
+    nemo-with-extensions     # file manager
     shotcut    
     nitch                             # systhem fetch util
     nix-prefetch-github
     obsidian
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
+    spotify
     todo                              # cli todo list
     toipe                             # typing test in the terminal
     udisks
@@ -37,7 +41,7 @@
     valgrind                          # c memory analyzer
     yazi                              # terminal file manager
     yt-dlp
-    gnome.zenity
+    zenity
     winetricks
     wineWowPackages.wayland
 
