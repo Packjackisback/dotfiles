@@ -2,7 +2,7 @@
   description = "packjack's nixos configuration";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
     nur.url = "github:nix-community/NUR";
   
     hypr-contrib.url = "github:hyprwm/contrib";
@@ -18,7 +18,7 @@
     };
   
     home-manager = {
-      url = "github:nix-community/home-manager";
+      url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

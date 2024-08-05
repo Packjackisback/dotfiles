@@ -25,7 +25,8 @@
     jdk21                             #for 1.20.6
     lazygit
     libreoffice
-    nemo-with-extensions     # file manager
+    mitmproxy
+    cinnamon.nemo-with-extensions     # file manager
     shotcut    
     nitch                             # systhem fetch util
     nix-prefetch-github
@@ -41,7 +42,7 @@
     valgrind                          # c memory analyzer
     yazi                              # terminal file manager
     yt-dlp
-    zenity
+    gnome.zenity
     winetricks
     wineWowPackages.wayland
 
