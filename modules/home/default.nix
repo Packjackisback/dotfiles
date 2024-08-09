@@ -19,7 +19,8 @@
     ++ [(import ./scripts/scripts.nix)]           # personal scripts
     ++ [(import ./starship.nix)]                  # shell prompt
     ++ [(import ./swaylock.nix)]                  # lock screen
-    ++ [(import ./spotify.nix)]                   # music player
+    ++ [(import ./spotify.nix)] 
+    ++ [(import ./unity.nix)]                  # music player
     ++ [(import ./waybar)]                        # status bar
     ++ [(import ./wofi.nix)]                      # launcher
     ++ [(import ./zsh.nix)];                      # shell

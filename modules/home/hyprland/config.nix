@@ -62,7 +62,7 @@
       };
 
       master = {
-        new_is_master = true;
+        new_on_top = true;
         special_scale_factor = 1;
         no_gaps_when_only = false;
       };
@@ -150,7 +150,7 @@
         "$mainMod, G,exec, $HOME/.local/bin/toggle_layout"
         "$mainMod, W,exec, pkill wofi || wallpaper-picker"
         "$mainMod SHIFT, W, exec, vm-start"
-
+        "$mainMod, H, exec, hyprpicker"
         # screenshot
         "$mainMod, Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
         ",Print, exec, grimblast --notify --cursor  copy area"
@@ -218,7 +218,7 @@
         "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
 
         # clipboard manager
-        "$mainMod, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
+        "$mainMod SHIFT, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
       ];
 
       # mouse binding

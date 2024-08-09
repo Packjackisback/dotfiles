@@ -10,6 +10,7 @@
     dipc
     eza                               # ls replacement
     entr                              # perform action when file change
+    betterbird                         #calendar client
     fastfetch
     fd                                # find replacement
     file                              # Show file information 
@@ -25,7 +26,8 @@
     jdk21                             #for 1.20.6
     lazygit
     libreoffice
-    mitmproxy
+    mitmproxy                         #for chromebooks with ap
+    nmap                              #vuln scanner
     cinnamon.nemo-with-extensions     # file manager
     shotcut    
     nitch                             # systhem fetch util
@@ -43,6 +45,7 @@
     yazi                              # terminal file manager
     yt-dlp
     gnome.zenity
+    wapiti                            #vuln scanner
     winetricks
     wineWowPackages.wayland
 

@@ -5,11 +5,11 @@
     # gamemode
     # gamescope
     # winetricks
-    # inputs.nix-gaming.packages.${pkgs.system}.wine-ge
-
+    #inputs.nix-gaming.packages.${pkgs.system}.wine-ge
+    
     ## Cli games
     #_2048-in-terminal
-    
+    crossfire-client
     ## Celeste
     #celeste-classic
     #celeste-classic-pm
@@ -20,8 +20,8 @@
     
 
     ## Emulation
-    sameboy
-    snes9x
+    #sameboy
+    #snes9x
     # cemu
     # dolphin-emu
   ];
