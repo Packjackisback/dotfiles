@@ -6,10 +6,10 @@
     # gamescope
     # winetricks
     #inputs.nix-gaming.packages.${pkgs.system}.wine-ge
-    
+    osu-lazer
     ## Cli games
     #_2048-in-terminal
-    crossfire-client
+    #crossfire-client
     ## Celeste
     #celeste-classic
     #celeste-classic-pm

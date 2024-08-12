@@ -1,6 +1,10 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
+    
+    
+    
+    liberation_ttf #fonts
     p7zip
     armcord
     bitwise                           # cli tool for bit / hex manipulation
@@ -26,6 +30,7 @@
     jdk21                             #for 1.20.6
     lazygit
     libreoffice
+    mdk4
     mitmproxy                         #for chromebooks with ap
     nmap                              #vuln scanner
     cinnamon.nemo-with-extensions     # file manager
