@@ -2,8 +2,8 @@
 {
   home.packages = (with pkgs; [
     
-    
-    
+    jetbrains.idea-ultimate
+    wayfire #trying it out
     liberation_ttf #fonts
     p7zip
     armcord
@@ -33,6 +33,7 @@
     mdk4
     mitmproxy                         #for chromebooks with ap
     nmap                              #vuln scanner
+    qbittorrent
     cinnamon.nemo-with-extensions     # file manager
     shotcut    
     nitch                             # systhem fetch util
