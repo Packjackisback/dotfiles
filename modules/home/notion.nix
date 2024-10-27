@@ -1,6 +1,6 @@
 { pkgs, ... }: 
 {
-  programs.spotify-player = {
+  programs.notion = {
     enable = true;  
   };
 }

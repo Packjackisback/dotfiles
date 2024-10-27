@@ -1,7 +1,8 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
-    
+    notion-app-enhanced
+    insomnia
     jetbrains.idea-ultimate
     wayfire #trying it out
     liberation_ttf #fonts
