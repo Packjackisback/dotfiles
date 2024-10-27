@@ -1,8 +1,8 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
-    nodejs 
-    npm
+    nodejs_22
+    nodePackages_latest.npm
     notion-app-enhanced
     insomnia
     jetbrains.idea-ultimate
