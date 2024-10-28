@@ -1,12 +1,10 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
-    nodejs_22
-    nodePackages_latest.npm
-    notion-app-enhanced
+    fnm
+    steam-run
     insomnia
     jetbrains.idea-ultimate
-    wayfire #trying it out
     liberation_ttf #fonts
     p7zip
     armcord

@@ -1,5 +1,10 @@
-{ hostname, config, pkgs, host, ...}: 
 {
+  hostname,
+  config,
+  pkgs,
+  host,
+  ...
+}: {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -7,9 +12,19 @@
     syntaxHighlighting.enable = true;
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "fzf" ];
+      plugins = ["git" "fzf"];
     };
     initExtra = ''
+      export PATH="/run/user/1000/fnm_multishells/497561_1730073368517/bin":$PATH
+      export FNM_VERSION_FILE_STRATEGY="local"
+      export FNM_MULTISHELL_PATH="/run/user/1000/fnm_multishells/497561_1730073368517"
+      export FNM_NODE_DIST_MIRROR="https://nodejs.org/dist"
+      export FNM_COREPACK_ENABLED="false"
+      export FNM_LOGLEVEL="info"
+      export FNM_ARCH="x64"
+      export FNM_DIR="/home/packjack/.local/share/fnm"
+      export FNM_RESOLVE_ENGINES="false"
+      rehash
     '';
     initExtraFirst = ''
       DISABLE_MAGIC_FUNCTIONS=true
@@ -19,7 +34,7 @@
       record = "wf-recorder --audio=alsa_output.pci-0000_08_00.6.analog-stereo.monitor -f $HOME/Videos/$(date +'%Y%m%d%H%M%S_1.mp4')";
 
       # Utils
-      v = "hx";      
+      v = "hx";
       c = "clear";
       cd = "z";
       tt = "gtrash put";
@@ -42,23 +57,23 @@
       nixswitchu = "sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#${host}";
       nix-flake-update = "sudo nix flake update ~/nixos-config#";
       nix-clean = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d";
-      
+
       # Git
-      ga   = "git add";
-      gaa  = "git add --all";
-      gs   = "git status";
-      gb   = "git branch";
-      gm   = "git merge";
-      gpl  = "git pull";
+      ga = "git add";
+      gaa = "git add --all";
+      gs = "git status";
+      gb = "git branch";
+      gm = "git merge";
+      gpl = "git pull";
       gplo = "git pull origin";
-      gps  = "git push";
+      gps = "git push";
       gpst = "git push --follow-tags";
       gpso = "git push origin";
-      gc   = "git commit";
-      gcm  = "git commit -m";
+      gc = "git commit";
+      gcm = "git commit -m";
       gcma = "git add --all && git commit -m";
       gtag = "git tag -ma";
-      gch  = "git checkout";
+      gch = "git checkout";
       gchb = "git checkout -b";
       gcoe = "git config user.email";
       gcon = "git config user.name";
