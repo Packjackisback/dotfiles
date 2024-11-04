@@ -27,13 +27,13 @@
         style = "bg:none fg:#161821";
     };        
 
-      # directory.substitutions = {
-        # "~" = "󰋞";
+      directory.substitutions = {
+        #"~" = "󰋞";
         # "Documents" = " ";
         # "Downloads" = " ";
         # "Music" = " ";
         # "Pictures" = " ";
-      # };
+      };
 
       palette = "catppuccin_mocha";
     } // builtins.fromTOML (builtins.readFile "${inputs.catppuccin-starship}/palettes/mocha.toml");

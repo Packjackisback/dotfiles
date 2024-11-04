@@ -1,10 +1,13 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
-    fnm
+    bluetuith
+    ytermusic
+    bun
+    assaultcube
     steam-run
     insomnia
-    jetbrains.idea-ultimate
+    jetbrains.idea-community
     liberation_ttf #fonts
     p7zip
     armcord
@@ -62,6 +65,7 @@
 
     # Python
     python312
+    python312Packages.pip
     bleachbit                         # cache cleaner
     cmatrix
     gparted                           # partition manager

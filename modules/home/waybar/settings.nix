@@ -9,7 +9,6 @@
     margin-left= 0;
     margin-right= 0;
     modules-left= [
-        "custom/launcher" 
         "hyprland/workspaces"
     ];
     modules-center= [
