@@ -2,23 +2,19 @@
 {
   home.packages = (with pkgs; [
     bluetuith
-    ytermusic
-    bun
+        bun
     assaultcube
     steam-run
-    insomnia
-    jetbrains.idea-community
+        jetbrains.idea-community
     liberation_ttf #fonts
     p7zip
     armcord
-    bitwise                           # cli tool for bit / hex manipulation
+                              # cli tool for bit / hex manipulation
     calibre
-    catppuccinifier-cli
-    diff-pdf
-    dipc
+       dipc
     eza                               # ls replacement
     entr                              # perform action when file change
-    betterbird                         #calendar client
+                         #calendar client
     fastfetch
     fd                                # find replacement
     file                              # Show file information 
@@ -39,7 +35,7 @@
     nmap                              #vuln scanner
     qbittorrent
     cinnamon.nemo-with-extensions     # file manager
-    shotcut    
+      
     nitch                             # systhem fetch util
     nix-prefetch-github
     obsidian
@@ -58,7 +54,7 @@
     wapiti                            #vuln scanner
     winetricks
     wineWowPackages.wayland
-
+ shotcut 
     # C / C++
     gcc
     gnumake
