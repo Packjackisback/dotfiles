@@ -97,7 +97,7 @@
       };
 
       animations = {
-        enabled = tree;
+        enabled = true;
 
         bezier = [
           "fluent_decel, 0, 0.2, 0.4, 1"
