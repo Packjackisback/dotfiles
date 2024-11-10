@@ -13,8 +13,7 @@
         "hyprland/workspaces"
     ],
     "modules-center": [
-        "clock",
-        "tray"
+        "clock"
     ],
     "modules-right": [
         "pulseaudio",
