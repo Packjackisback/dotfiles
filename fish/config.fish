@@ -18,3 +18,6 @@ if status is-interactive
     alias rc reset_cursor
     trap reset_cursor EXIT
 end
+
+# Created by `pipx` on 2024-11-10 22:18:45
+set PATH $PATH /home/packjack/.local/bin
