@@ -1,0 +1,70 @@
+* {
+    background-color: #282828; /* Polybar's background color */
+    color: #ebdbb2; /* Polybar's primary color */
+    font-family: 'Cousine Nerd Font Mono';
+    font-size: 10px;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+#cpu, #memory, #network, #clock, #battery, #pulseaudio{
+    background-color: #3c3836; /* Adjusted based on module colors */
+    color: #ebdbb2;
+    padding: 0 10px;
+    margin: 3px 2px;
+    border-radius: 0px;
+}
+#battery {
+  margin-right: 8px;
+}
+#cpu:hover, #memory:hover, #network:hover {
+    background-color: #504945; /* Hover effect */
+}
+#workspaces button {
+  padding: 0 3px;
+  color: #ebdbb2;
+  font-size: 10;
+}
+
+#workspaces button.active {
+  color: #b16286;
+}
+/*#battery.charging, #battery.plugged {
+    background-color: #3c3836;
+} */
+
+/*#workspaces button {
+  min-width: 0;
+  box-shadow: inset 0 -3px transparent;
+  color: #cdd6f4;
+  background-color: #3c3836;
+}
+
+#workspaces button.focused {
+    background-color: #ebdbb2; 
+    color: #ffffff;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.inactive {
+    background-color: #ebdbb2; 
+    color: #bfbfbf;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b; 
+    color: #ffffff;
+}
+*/
+#battery.critical {
+    background-color: #cc241d; /* Critical battery color */
+    animation: blink 1s steps(12) infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ebdbb2;
+        color: #3c3836;
+    }
+}
+
