@@ -1,14 +1,15 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
+    redeclipse
     bluetuith
-        bun
-    assaultcube
+    xonotic
+    bun
     steam-run
-        jetbrains.idea-community
     liberation_ttf #fonts
     p7zip
     armcord
+    cowpatty
                               # cli tool for bit / hex manipulation
     calibre
        dipc
