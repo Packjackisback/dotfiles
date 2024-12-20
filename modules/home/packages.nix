@@ -9,7 +9,7 @@
     liberation_ttf #fonts
     p7zip
     armcord
-    cowpatty
+    proton-ge-bin
                               # cli tool for bit / hex manipulation
     calibre
        dipc

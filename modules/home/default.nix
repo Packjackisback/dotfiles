@@ -20,7 +20,8 @@
     ++ [(import ./scripts/scripts.nix)]           # personal scripts
     ++ [(import ./starship.nix)]                  # shell prompt
     ++ [(import ./swaylock.nix)]                  # lock screen
-    ++ [(import ./spotify.nix)] 
+    ++ [(import ./spotify.nix)]
+    ++ [(import ./steam.nix)]
     ++ [(import ./unity.nix)]                  # music player
     ++ [(import ./waybar)]                        # status bar
     ++ [(import ./wofi.nix)]                      # launcher
